@@ -1,0 +1,82 @@
+# .env.example
+# EduAssist AI - Environment Variables Template
+# Copy this file to .env and fill in your actual values
+
+# ============================================================================
+# REQUIRED CONFIGURATION
+# ============================================================================
+
+# Google Gemini API Key (Required)
+# Get your API key from: https://aistudio.google.com/
+GOOGLE_API_KEY=your_gemini_api_key_here
+
+# Google Cloud Project ID (Optional, for deployment)
+PROJECT_ID=your_google_cloud_project_id
+
+# ============================================================================
+# OPTIONAL CONFIGURATION
+# ============================================================================
+
+# Logging Configuration
+LOG_LEVEL=INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# Model Configuration
+MODEL_NAME=gemini-2.0-flash-exp
+MODEL_TEMPERATURE=0.7
+MAX_TOKENS=2048
+
+# Session Configuration
+SESSION_TIMEOUT=3600  # seconds
+SESSION_EXPIRY_HOURS=24
+
+# Agent Configuration
+MAX_RETRIES=3
+REQUEST_TIMEOUT=30  # seconds
+
+# Application Configuration
+APP_NAME=eduassist_ai
+APP_VERSION=1.0.0
+ENVIRONMENT=development  # development, staging, production
+
+# ============================================================================
+# DEPLOYMENT CONFIGURATION (Cloud Run)
+# ============================================================================
+
+# Port for web server
+PORT=8080
+
+# Region for deployment
+CLOUD_RUN_REGION=us-central1
+
+# Service account (optional)
+# SERVICE_ACCOUNT_EMAIL=your-service-account@project.iam.gserviceaccount.com
+
+# ============================================================================
+# ADVANCED FEATURES (Optional)
+# ============================================================================
+
+# Memory Service Configuration
+# MEMORY_SERVICE_TYPE=in_memory  # in_memory, firestore, postgresql
+# DATABASE_URL=postgresql://user:password@localhost:5432/eduassist
+
+# A2A Protocol Configuration (Future)
+# A2A_ENABLED=false
+# A2A_ENDPOINT=https://your-a2a-endpoint.com
+
+# Observability (Future)
+# ENABLE_METRICS=true
+# METRICS_PORT=9090
+# ENABLE_TRACING=false
+# JAEGER_ENDPOINT=http://localhost:14268/api/traces
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# 
+# 1. NEVER commit the actual .env file with real credentials to Git
+# 2. Add .env to your .gitignore file
+# 3. For production, use secret management services:
+#    - Google Cloud Secret Manager
+#    - AWS Secrets Manager
+#    - HashiCorp Vault
+# 4. Keep your API keys secure and rotate them regularly

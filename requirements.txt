@@ -1,0 +1,55 @@
+# requirements.txt
+# EduAssist AI - Multi-Agent Educational Support System
+# Google 5-Day AI Agents Intensive Course - Capstone Project
+
+# Core ADK and Google AI
+google-adk>=0.2.0
+google-generativeai>=0.8.0
+google-ai-generativelanguage>=0.6.0
+
+# Agent Development Kit Web UI
+adk-web>=0.1.0
+
+# Google Cloud dependencies
+google-cloud-logging>=3.10.0
+google-cloud-storage>=2.16.0
+
+# Data handling and utilities
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+typing-extensions>=4.9.0
+
+# HTTP and API tools
+requests>=2.31.0
+httpx>=0.26.0
+
+# Testing and evaluation
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0
+
+# Code quality
+black>=23.12.0
+flake8>=7.0.0
+mypy>=1.8.0
+
+# Logging and monitoring
+structlog>=24.1.0
+python-json-logger>=2.0.7
+
+# Date and time utilities
+python-dateutil>=2.8.2
+pytz>=2024.1
+
+# Optional: For advanced features
+# langchain>=0.1.0
+# chromadb>=0.4.0
+# faiss-cpu>=1.7.4
+
+# Development tools
+ipython>=8.20.0
+jupyter>=1.0.0
+
+# Deployment
+gunicorn>=21.2.0
+uvicorn>=0.27.0
